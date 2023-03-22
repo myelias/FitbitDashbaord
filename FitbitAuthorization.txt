@@ -1,0 +1,18 @@
+Enter this request into the browser:
+
+https://www.fitbit.com/oauth2/authorize?&response_type=code&client_id=239824&redirect_uri=http://localhost
+&scope=activity%20heartrate%20location%20nutrition%20oxygen_saturation%20profile
+%20respiratory_rate%20settings%20sleep%20social%20temperature%20weight
+
+URL should return http://localhost/?code=2ed10d0f90c5b50b4226a07b669ca1edc868aaa5#_=_
+***Everything after "code" and before "#=_=" is your code
+
+Now we exchange the access code, denoted after code in the return response above:
+2ed10d0f90c5b50b4226a07b669ca1edc868aaa5#
+for an access token
+
+To do so, first you need to Base64 Encode this: clientid:client_secret, or:
+239824:78ca013aa8147e78910d27f91328f560
+The client secret is from my application page
+to get the following:
+MjM5ODI0OmIyNGZlYTg2NTQ1Y2I4MjA2NzdkYTQwYTJiYTYzZWI2
