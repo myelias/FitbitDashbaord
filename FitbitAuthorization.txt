@@ -8,7 +8,7 @@ URL should return http://localhost/?code=2ed10d0f90c5b50b4226a07b669ca1edc868aaa
 ***Everything after "code" and before "#=_=" is your code
 
 Now we exchange the access code, denoted after code in the return response above:
-2ed10d0f90c5b50b4226a07b669ca1edc868aaa5#
+2ed10d0f90c5b50b4226a07b669ca1edc868aaa5
 for an access token
 
 To do so, first you need to Base64 Encode this: clientid:client_secret, or:

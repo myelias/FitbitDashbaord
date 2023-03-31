@@ -5,7 +5,7 @@ from getTokens import getTokens
 def main():
     clientID = "239824"
     clientSecret = "78ca013aa8147e78910d27f91328f560"
-    authCode = "2ed10d0f90c5b50b4226a07b669ca1edc868aaa5"
+    authCode = "94d1cfb1bb2d0b19b8dd7d5727113d8292e0a263"
     getTokens(clientID, clientSecret, authCode)
 
 
